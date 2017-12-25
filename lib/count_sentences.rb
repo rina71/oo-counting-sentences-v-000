@@ -15,10 +15,17 @@ class String
   end
 
   def count_sentences
-    # asdf. asdf. asdf
-    # asdf. asdf.
-    # asdf... asdf.
-    # asdf
+    # split on punctuation
+    # delete empty strings
+    # take the count
+    # if the original string didn't end in punctunation
+    #    subtract 1 from count
+    # return max(0, count)
+
+    a = self.split(/\.|\!|\?/)
+    a.delete("")
+    a.count
+
     if self.sentence? || self.question? || self.exclamation?
       binding.pry
       self.split(/\.|\!|\?/).count

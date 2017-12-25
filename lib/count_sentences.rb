@@ -20,7 +20,8 @@ class String
       self.split(/\.|\!|\?/).count
 
     elsif self.split(/\.|\!|\?/).include?("")
-      a = self.split(/\.|\!|\?/).delete("")
+      a = self.split(/\.|\!|\?/)
+      a.delete("")
       return a.count
     else
       0

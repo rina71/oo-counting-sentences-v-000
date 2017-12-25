@@ -15,7 +15,11 @@ class String
   end
 
   def count_sentences
-    if (self.sentence? || self.question? || self.exclamation?)
+    # asdf. asdf. asdf
+    # asdf. asdf.
+    # asdf... asdf.
+    # asdf
+    if self.sentence? || self.question? || self.exclamation?
       binding.pry
       self.split(/\.|\!|\?/).count
 

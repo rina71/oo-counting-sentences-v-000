@@ -24,6 +24,7 @@ class String
 
     a = self.split(/\.|\!|\?/)
     a.delete("")
+    binding.pry
     a.count
 
     # if self.sentence? || self.question? || self.exclamation?

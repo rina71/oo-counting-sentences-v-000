@@ -26,17 +26,17 @@ class String
     a.delete("")
     a.count
 
-    if self.sentence? || self.question? || self.exclamation?
-      binding.pry
-      self.split(/\.|\!|\?/).count
-
-    elsif self.split(/\.|\!|\?/).include?("")
-      a = self.split(/\.|\!|\?/)
-
-      a.delete("")
-      return a.count
-    else
-      0
-    end
+    # if self.sentence? || self.question? || self.exclamation?
+    #   binding.pry
+    #   self.split(/\.|\!|\?/).count
+    # 
+    # elsif self.split(/\.|\!|\?/).include?("")
+    #   a = self.split(/\.|\!|\?/)
+    # 
+    #   a.delete("")
+    #   return a.count
+    # else
+    #   0
+    # end
   end
 end

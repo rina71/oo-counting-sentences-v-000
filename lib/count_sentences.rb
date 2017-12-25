@@ -21,6 +21,7 @@ class String
 
     elsif self.split(/\.|\!|\?/).include?("")
       a = self.split(/\.|\!|\?/)
+      binding.pry
       a.delete("")
       return a.count
     else
